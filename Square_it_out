@@ -1,0 +1,14 @@
+def square_and_filter(start, end):
+    squares = [i**2 for i in range(start, end + 1)]
+    
+    even_squares = [num for num in squares if num % 2 == 0]
+    odd_squares = [num for num in squares if num % 2 != 0]
+
+    print("All square numbers:", squares)
+    print("Even square numbers:", even_squares)
+    print("Odd square numbers:", odd_squares)
+
+start = int(input("Enter the start of range: "))
+end = int(input("Enter the end of range: "))
+
+square_and_filter(start, end)
